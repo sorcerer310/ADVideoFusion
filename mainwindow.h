@@ -9,6 +9,11 @@
 #include <QMediaPlaylist>
 #include <QUrl>
 #include <QVideoSurfaceFormat>
+#include <QPushButton>
+#include <QMdiSubWindow>
+#include <QTextEdit>
+
+#include <forms/AICCMdiSubWindow.hpp>
 
 QT_BEGIN_NAMESPACE
 namespace Ui { class MainWindow; }
@@ -23,6 +28,8 @@ public:
     ~MainWindow();
 
 private:
+    void initToolBar();
+    void initTreeView();
    bool checkCameraAvailability();
 
 private:

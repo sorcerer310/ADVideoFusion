@@ -27,6 +27,10 @@ set(PROJECT_SOURCES
         mainwindow.cpp
         mainwindow.h
         mainwindow.ui
+
+        forms/AICCMdiSubWindow.hpp
+
+        resources.qrc
 )
 
 #add_executable(ADVideoFusion
