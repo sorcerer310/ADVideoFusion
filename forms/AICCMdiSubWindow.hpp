@@ -7,10 +7,10 @@ class AICCMdiSubWindow : public QMdiSubWindow
 {
     Q_OBJECT
 public:
-    AICCMdiSubWindow(){}
+    AICCMdiSubWindow(){
+        setWindowFlags(Qt::Window | Qt::WindowTitleHint    | Qt::WindowCloseButtonHint);
+    }
     ~AICCMdiSubWindow(){}
-
-
 };
 
 #endif // AICCMDISUBWINDOW_H

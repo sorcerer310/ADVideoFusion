@@ -29,6 +29,7 @@ set(PROJECT_SOURCES
         mainwindow.ui
 
         forms/AICCMdiSubWindow.hpp
+        forms/AICCChannelMdiSubWindow.hpp
 
         resources.qrc
 )

@@ -33,6 +33,7 @@ void MainWindow::initToolBar(){
     //初始化tab标签
 
     //初始化toolbar按钮
+
     QToolButton *tb_channel = ui->tb_channel;
     connect(tb_channel,&QToolButton::clicked,tb_channel,[&](){
         AICCMdiSubWindow *msw = new AICCMdiSubWindow;
