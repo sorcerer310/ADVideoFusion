@@ -13,6 +13,7 @@
 #include <QMdiSubWindow>
 #include <QTextEdit>
 
+
 #include <forms/AICCMdiSubWindow.hpp>
 
 QT_BEGIN_NAMESPACE
