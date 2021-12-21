@@ -12,9 +12,16 @@
 #include <QPushButton>
 #include <QMdiSubWindow>
 #include <QTextEdit>
-
+#include <grpc++/grpc++.h>
 
 #include <forms/AICCMdiSubWindow.hpp>
+#include <forms/AICCChannelMdiSubWindow.hpp>
+#include <forms/AICCVideoMdiSubWindow.hpp>
+
+using grpc::Server;
+using grpc::ServerBuilder;
+using grpc::ServerContext;
+using grpc::Status;
 
 QT_BEGIN_NAMESPACE
 namespace Ui { class MainWindow; }

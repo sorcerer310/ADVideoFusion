@@ -33,11 +33,12 @@ void MainWindow::initToolBar(){
     //初始化tab标签
 
     //初始化toolbar按钮
+
     QToolButton *tb_channel = ui->tb_channel;
     connect(tb_channel,&QToolButton::clicked,tb_channel,[&](){
-        AICCMdiSubWindow *msw = new AICCMdiSubWindow;
-        msw->setWidget(new QTextEdit());
-        msw->setWindowTitle("subWindow");
+        AICCChannelMdiSubWindow *msw = new AICCChannelMdiSubWindow;
+//        msw->setWidget(new QTextEdit());
+//        msw->setWindowTitle("subWindow");
         ui->mdiArea->addSubWindow(msw);
         msw->show();
     });
@@ -45,9 +46,15 @@ void MainWindow::initToolBar(){
     //初始化连接按钮
     QToolButton *tb_connect = ui->tb_connect;
     connect(tb_connect,&QToolButton::clicked,tb_connect,[&](){
-
+//        Greeter *greeter = new Greeter();
     });
 
+    QToolButton *tb_testVideo = ui->tb_testVideo;
+    connect(tb_testVideo,&QToolButton::clicked,tb_testVideo,[&](){
+            AICCVideoMdiSubWindow  *vmsw = new AICCVideoMdiSubWindow();
+            ui->mdiArea->addSubWindow(vmsw);
+            vmsw->show();
+    });
 //    connect(pb_mdiform,&QPushButton::clicked,pb_mdiform,[&](){
 //        QMdiSubWindow *subWindow = new QMdiSubWindow;
 //        subWindow->setWidget(new QTextEdit());

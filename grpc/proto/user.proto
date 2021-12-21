@@ -1,0 +1,11 @@
+service user{
+	rpc login(LoginRequest) returns (APIResponse);
+	rpc logout(Empty) returns (APIResponse);
+}
+
+message LoginRequest {
+	string username = 1;
+	string passwd = 2;
+}
+
+

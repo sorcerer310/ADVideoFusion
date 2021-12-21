@@ -22,14 +22,20 @@ find_package(Qt${QT_VERSION_MAJOR} COMPONENTS Widgets
     3DCore
     REQUIRED)
 
+
 set(PROJECT_SOURCES
         main.cpp
         mainwindow.cpp
         mainwindow.h
         mainwindow.ui
+        widgets/multiplevideoform.h widgets/multiplevideoform.cpp widgets/multiplevideoform.ui
 
         forms/AICCMdiSubWindow.hpp
         forms/AICCChannelMdiSubWindow.hpp
+        forms/AICCVideoMdiSubWindow.hpp
+
+        grpc/grpctest.h
+        grpc/grpctest.cpp
 
         resources.qrc
 )
@@ -64,6 +70,7 @@ endif()
 
 target_link_libraries(ADVideoFusion
     PRIVATE
+    qs_video_player
     Qt${QT_VERSION_MAJOR}::Widgets
     Qt${QT_VERSION_MAJOR}::Multimedia
     Qt${QT_VERSION_MAJOR}::MultimediaWidgets
@@ -79,3 +86,5 @@ set_target_properties(ADVideoFusion PROPERTIES
 if(QT_VERSION_MAJOR EQUAL 6)
     qt_finalize_executable(ADVideoFusion)
 endif()
+
+add_subdirectory(qs_video_player)

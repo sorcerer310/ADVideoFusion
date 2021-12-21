@@ -246,25 +246,18 @@
            </property>
           </widget>
          </item>
-         <item row="0" column="2">
-          <widget class="QToolButton" name="tb_channel">
-           <property name="text">
-            <string>频道</string>
+         <item row="0" column="4">
+          <spacer name="horizontalSpacer">
+           <property name="orientation">
+            <enum>Qt::Horizontal</enum>
            </property>
-           <property name="icon">
-            <iconset resource="resources.qrc">
-             <normaloff>:/res/connect.png</normaloff>:/res/connect.png</iconset>
-           </property>
-           <property name="iconSize">
+           <property name="sizeHint" stdset="0">
             <size>
-             <width>48</width>
-             <height>48</height>
+             <width>40</width>
+             <height>20</height>
             </size>
            </property>
-           <property name="toolButtonStyle">
-            <enum>Qt::ToolButtonTextUnderIcon</enum>
-           </property>
-          </widget>
+          </spacer>
          </item>
          <item row="0" column="1">
           <widget class="QToolButton" name="tb_disconnect">
@@ -286,18 +279,45 @@
            </property>
           </widget>
          </item>
-         <item row="0" column="3">
-          <spacer name="horizontalSpacer">
-           <property name="orientation">
-            <enum>Qt::Horizontal</enum>
+         <item row="0" column="2">
+          <widget class="QToolButton" name="tb_channel">
+           <property name="text">
+            <string>频道</string>
            </property>
-           <property name="sizeHint" stdset="0">
+           <property name="icon">
+            <iconset resource="resources.qrc">
+             <normaloff>:/res/connect.png</normaloff>:/res/connect.png</iconset>
+           </property>
+           <property name="iconSize">
             <size>
-             <width>40</width>
-             <height>20</height>
+             <width>48</width>
+             <height>48</height>
             </size>
            </property>
-          </spacer>
+           <property name="toolButtonStyle">
+            <enum>Qt::ToolButtonTextUnderIcon</enum>
+           </property>
+          </widget>
+         </item>
+         <item row="0" column="3">
+          <widget class="QToolButton" name="tb_testVideo">
+           <property name="text">
+            <string>测试视频</string>
+           </property>
+           <property name="icon">
+            <iconset resource="resources.qrc">
+             <normaloff>:/res/connect.png</normaloff>:/res/connect.png</iconset>
+           </property>
+           <property name="iconSize">
+            <size>
+             <width>48</width>
+             <height>48</height>
+            </size>
+           </property>
+           <property name="toolButtonStyle">
+            <enum>Qt::ToolButtonTextUnderIcon</enum>
+           </property>
+          </widget>
          </item>
         </layout>
        </widget>

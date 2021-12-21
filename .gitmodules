@@ -1,0 +1,3 @@
+[submodule "qs_video_player"]
+	path = qs_video_player
+	url = https://github.com/liudian/qs_video_player.git
